@@ -27,11 +27,13 @@
                         primary_2: 'rgb(33, 33, 33);',
                         secondary: 'rgb(17, 17, 17)',
                         secondary2: 'rgb(115, 115, 115)',
+                        secondary3: 'rgb(233, 233, 233)',
                         body_bg: 'rgb(244, 244, 244)',
                         back_black: 'rgb(28,28,28)',
                         body_neutral: 'rgb(51, 51, 51)',
                         header_color: 'rgb(33, 33, 33)',
                         review_color: 'rgb(73, 73, 73)',
+                        border_Color: 'rgb(233, 233, 233)',
                         bg_Card: '#E7C1D3',
                         bg_Card1: '#EFDA6E',
                         bg_Card2: '#A4DAC3',
@@ -59,7 +61,6 @@
         <nav class="container mx-auto py-9 sm:px-0 px-3">
             <div class="navbar p-0">
                 <div class="navbar-start">
-
                     <div class="flex items-center space-x-2">
                         <div class="bg-primary flex items-center justify-center h-10 w-10 rounded-full">
                             <i class="fa-solid fa-arrow-up text-2xl rotate-45"></i>
@@ -278,7 +279,41 @@
 
             </div>
         </section>
-
+        <!-- out latest portfolio start -->
+        <section class="my-20">
+            <div class="container mx-auto">
+                <div class="text-center space-y-4">
+                    <button
+                        class="px-5 rounded-full bg-primary bg-opacity-30 text-review_color font-bold text-base"><i
+                            class="fa-solid fa-arrow-right text-lg mr-2"></i>Explore our Latest works</button>
+                    <h3 class="text-header_color text-[40px] font-bold">Our Latest Portfolio</h3>
+                    <p class="text-review_color font-medium text-base w-full lg:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="pt-8">
+                    <div class="grid grid-cols-12 gap-9">
+                        <div class="col-span-8 gap-5 p-6 bg-white border rounded-xl border-border_Color">
+                            <div class="grid grid-cols-5 gap-5 items-center">
+                                <div class="col-span-2">
+                                    <img class="w-full h-full" src="./assets/img1.png" alt="">
+                                </div>
+                                <div class="col-span-3 space-y-6">
+                                    <h4 class="text-2xl font-extrabold text-review_color">Commercial</h4>
+                                    <p class="text-base text-secondary2 font-medium w-4/5">The Room Setup System is a comprehensive, user-friendly tool that guides users through the process of setting up a room from start to finish. Whether you’re moving into a new space, redecorating, or organizing a special event.</p>
+                                    <button class="flex items-center font-extrabold text-xl gap-x-3">View Details<i
+                                        class="fa-solid fa-arrow-up text-2xl rotate-45 bg-primary flex items-center justify-center h-10 w-10 rounded-full"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4">
+                            <div>
+                                <img src="./assets/img2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- out latest portfolio end -->
 
         <!-- Articles and News section start -->
         <section class="bg-body_bg mt-4">
@@ -293,11 +328,11 @@
                         accents.</p>
                 </div>
                 <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 pt-10">
-                    <div class="card bg-base-100 p-6 space-y-4 flex-col sm:flex-row  gap-x-4 lg:flex-col">
-                        <div class="h-full">
-                            <img class="w-full h-full" src="./assets/article1.png" alt="">
-                        </div>
-                        <div class="card-body space-y-3">
+                    <div class="card bg-base-100 space-y-4 gap-x-4 items-center grid sm:grid-cols-5 lg:grid-cols-1">
+                        <figure class="px-7 pt-7 sm:py-7 lg:py-0 lg:pt-7 sm:pr-0 lg:pr-7 sm:col-span-2 w-full h-full">
+                            <img src="./assets/article1.png" alt="" class="w-full h-full">
+                        </figure>
+                        <div class="card-body space-y-3 sm:col-span-3">
                             <div class="flex space-x-4">
                                 <div class="flex space-x-2 items-center">
                                     <i class="fa-regular fa-calendar-days"></i>
@@ -318,11 +353,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 space-y-4 flex-col sm:flex-row  gap-x-4 lg:flex-col">
-                        <div class="h-full max-sm:w-full  max-md:w-[88%]">
-                            <img class="w-full h-full" src="./assets/article2.png" alt="">
-                        </div>
-                        <div class="card-body space-y-3">
+                    <div class="card bg-base-100 space-y-4 gap-x-4 items-center grid sm:grid-cols-5 lg:grid-cols-1">
+                        <figure class="px-7 pt-7 sm:py-7 lg:py-0 lg:pt-7 sm:pr-0 lg:pr-7 sm:col-span-2 w-full h-full">
+                            <img src="./assets/article2.png" alt="" class="w-full h-full">
+                        </figure>
+                        <div class="card-body space-y-3 sm:col-span-3">
                             <div class="flex space-x-4">
                                 <div class="flex space-x-2 items-center">
                                     <i class="fa-regular fa-calendar-days"></i>
@@ -343,11 +378,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 space-y-4 flex-col sm:flex-row  gap-x-4 lg:flex-col">
-                        <div class="h-full max-sm:w-full max-lg:w-2/3 max-md:w-3/4">
-                            <img class="w-full h-full" src="./assets/article3.png" alt="">
-                        </div>
-                        <div class="card-body space-y-3">
+                    <div class="card bg-base-100 space-y-4 gap-x-4 items-center grid sm:grid-cols-5 lg:grid-cols-1">
+                        <figure class="px-7 pt-7 sm:py-7 lg:py-0 lg:pt-7 sm:pr-0 lg:pr-7 sm:col-span-2 w-full h-full">
+                            <img src="./assets/article3.png" alt="" class="w-full h-full">
+                        </figure>
+                        <div class="card-body space-y-3 sm:col-span-3">
                             <div class="flex space-x-4">
                                 <div class="flex space-x-2 items-center">
                                     <i class="fa-regular fa-calendar-days"></i>
@@ -395,7 +430,7 @@
                         <input type="text" class="p-5 rounded-full bg-white text-gray-500 w-full"
                             placeholder="Email Name*">
                         <textarea rows="6" name="" id="" placeholder="Write your message here"
-                            class="bg-white bg-gray-500 p-5 rounded-2xl lg:col-span-2"></textarea>
+                            class="bg-white text-gray-500 p-5 rounded-2xl lg:col-span-2"></textarea>
                         <!-- <div> -->
                         <!-- <button
                             class=" py-3 px-5 bg-primary flex items-center gap-4 rounded-full text-xl font-extrabold">Book
@@ -403,7 +438,8 @@
                             <i
                                 class="fa-solid fa-arrow-up text-2xl rotate-45 bg-black flex items-center justify-center h-10 w-10 rounded-full text-white"></i>
                         </button> -->
-                        <div class="flex items-center gap-x-3 py-3 px-5 bg-primary justify-center lg:col-span-2 rounded-full">
+                        <div
+                            class="flex items-center gap-x-3 py-3 px-5 bg-primary justify-center lg:col-span-2 rounded-full">
                             <p class="text-xl font-extrabold">Send Mail</p>
                             <i
                                 class="fa-solid fa-arrow-up text-2xl rotate-45 bg-black flex items-center justify-center h-10 w-10 rounded-full text-white"></i>
@@ -416,54 +452,45 @@
     </main>
     <!------------------------------------ Main section End ------------------------------------>
     <!------------------------------------ Footer section Start ------------------------------------>
-    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
-        <nav class="grid grid-flow-col gap-4">
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <div class="grid grid-flow-col gap-4">
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current">
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current">
-                <path
-                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current">
-                <path
-                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
-          </div>
-        </nav>
-        <aside>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-        </aside>
-      </footer>
+    <footer class="bg-black">
+        <div class="container mx-auto px-5 sm:px-0">
+            <div class="py-16 lg:py-24 w-full lg:w-2/3 mx-auto text-center">
+                <nav class="grid grid-flow-col gap-4 pb-5 footer-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="bg-primary flex items-center justify-center h-10 w-10 rounded-full">
+                            <i class="fa-solid fa-arrow-up text-2xl rotate-45"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-5xl font-bold text-white">Rinterio</h4>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="footer-center">
+                    <p class="text-secondary2 font-medium text-base">Measure Your Rooms is a web-based tool designed to
+                        help homeowners, renters, and interior designers accurately measure the dimensions of their
+                        rooms. </p>
+                </nav>
+                <nav class="py-12 footer-center">
+                    <div
+                        class="flex justify-between max-sm:flex-col text-secondary3 font-medium text-base max-sm:space-y-8">
+                        <a href="">Home</a>
+                        <a href="">Services</a>
+                        <a href="">Portfolio</a>
+                        <a href="">Blogs</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                </nav>
+                <div class="h-16 w-full sm:w-60 flex bg-primary justify-center items-center mx-auto rounded-full">
+                    <button
+                        class="flex items-center justify-center gap-x-3 text-xl font-extrabold">Book
+                        Consult
+                        <i
+                            class="fa-solid fa-arrow-up text-2xl rotate-45 bg-black flex items-center justify-center h-10 w-10 rounded-full text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!------------------------------------ Footer section End ------------------------------------>
 </body>
 
